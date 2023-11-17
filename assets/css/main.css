@@ -4687,3 +4687,9 @@ input, select, textarea {
 		}
 
 	}
+
+	.highlight {
+		color: #f39c12; /* Желаемый цвет для подсветки */
+		font-weight: bold; /* Делаем текст жирным */
+	  }
+	  
