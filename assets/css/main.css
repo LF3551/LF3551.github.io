@@ -4693,11 +4693,11 @@ input, select, textarea {
 		text-align: center; /* Центрирование текста */
 	  }
 	  
-	  .name-highlight {
+	.name-highlight {
 		color: #F39C12; /* Выделяем имя цветом */
 	  }
 	  
-	  .highlight {
+	.highlight {
 		color: #3498DB; /* Выделяем ключевые слова другим цветом */
 	  }
 	  
