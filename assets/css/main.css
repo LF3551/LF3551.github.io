@@ -4688,8 +4688,16 @@ input, select, textarea {
 
 	}
 
-	.highlight {
-		color: #f39c12; /* Желаемый цвет для подсветки */
-		font-weight: bold; /* Делаем текст жирным */
+	.welcome-message {
+		color: #FFFFFF; /* Или другой цвет текста */
+		text-align: center; /* Центрирование текста */
+	  }
+	  
+	  .name-highlight {
+		color: #F39C12; /* Выделяем имя цветом */
+	  }
+	  
+	  .highlight {
+		color: #3498DB; /* Выделяем ключевые слова другим цветом */
 	  }
 	  
