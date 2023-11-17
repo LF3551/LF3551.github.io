@@ -4689,7 +4689,7 @@ input, select, textarea {
 	}
 
 	.welcome-message {
-		color: black; /* Или другой цвет текста */
+		color: grey; /* Или другой цвет текста */
 		text-align: center; /* Центрирование текста */
 	  }
 	  
