@@ -6,6 +6,47 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+.posts-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.posts-table article {
+    flex: 1 1 calc(50% - 20px); /* 50% ширины с учетом отступов */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 600px; /* Установка фиксированной высоты для всех статей */
+}
+
+.image.fit {
+    width: 100%;
+    height: auto;
+}
+
+.article-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.actions.special {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -18,13 +59,13 @@
 					</div>
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Software Engineer</a>
+						<a href="index.html" class="logo">Expert Software Engineer</a>
 					</header>
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links"><li class="active"><a href="index.html">My Creative Corner</a></li></ul>
 						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/aleksei-✅-aleinikov-✅-78195911a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.linkedin.com/in/aleksei-aleinikov-78195911a/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/LF3551" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 							<li><a href="https://t.me/aleksey_a1" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
 						</ul>
@@ -42,63 +83,95 @@
 						</article>
 						<!-- Posts -->
 							<section class="posts">
-								<table class="posts-table" style="width: 100%;">
+								<table class="posts-table">
 									<article>
-										<header><h2><a>Project 1</a></h2><h4><a>StockPredict</a></h4>
-										</header>
-										<a class="image fit"><img src="https://i.postimg.cc/KvpH03wZ/mvp.png"  alt="StockPredict" /></a>
+										<header><h2><a>Project 1</a></h2><h4><a>StockPredict</a></h4></header>
+										<a class="image fit"><img src="https://i.postimg.cc/KvpH03wZ/mvp.png" alt="StockPredict" /></a>
 										<p>
 											This product integrates two essential components of modern market analysis: 
 											sentiment analysis of news flows, conducted by the Gemini Pro model, 
-											and forecasting based on historical data utilizing ML ARIMA. <br><br><br></p>
+											and forecasting based on historical data utilizing ML ARIMA.
+										</p>
 										<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
 									</article>
 									<article>
 										<header><h2><a>Project 2</a></h2><h4><a>Crypto Analyser</a></h4></header>
-										<a class="image fit"><img src="https://i.postimg.cc/LsqKkKT8/crypto.png"  alt="Crypto Analyser" /></a>
-											<p><br>
-												This service retrieves real-time data from various information sources worldwide, 
-												conducts sentiment analysis of news using the Ollama Llama2 model, 
-												and performs technical analysis based on 30 different indicators per token across various time windows.<br><br></p>
-											<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
-									</article>
-									<article>
-										<header><h2><a>Project 3</a></h2><h4><a>Whales Finder</a></h4></header>
-										<a class="image fit"><img src="https://i.postimg.cc/y84p9rzq/temp-Image67cs7-O.avif" style="margin-bottom: -1.5cm;" alt="Crypto Analyser" /></a>
-											<p><br>
-												The "Whales Finder" project is a real-time transaction analysis tool on the Ethereum blockchain aimed at
-												 identifying major players (whales) making transactions of certain amounts. 
-												 With this tool, users can monitor the activity of large market participants and receive notifications about 
-												 potentially significant transactions, helping them make informed decisions in their investment activities on the Ethereum
-												 platform.</p>
-											<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
-									</article>
-									<article>
-										<header><h2><a>Project 4</a></h2><h4><a>Auto-trading Bot</a></h4></header>
-										<a class="image fit"><img src="https://i.postimg.cc/Y24s9zSQ/trader.png" alt="Auto-trading Bot" /></a>
-										<p><br><br>This bot receives signals in the form of webhooks from the TradingView platform
-											 and automatically opens positions to buy or sell various currency pairs.</p><br><br><br><br><br><br>
+										<a class="image fit"><img src="https://i.postimg.cc/LsqKkKT8/crypto.png" alt="Crypto Analyser" /></a>
+										<p>
+											This service retrieves real-time data from various information sources worldwide, 
+											conducts sentiment analysis of news using the Ollama Llama2 model, 
+											and performs technical analysis based on 30 different indicators per token across various time windows.
+										</p>
 										<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
 									</article>
 									<article>
-										<header><h2><a>Project 5</a></h2><h4><a>T-Book Club website</a></h4></header>
-										<a class="image fit"><img src="images/BK.JPG"  alt="T-Book Club website" /></a>
+										<header>
+											<h2><a>Project 3</a></h2>
+											<h4><a>Whales Finder</a></h4>
+										</header>
+										<a class="image fit"><img src="https://i.postimg.cc/y84p9rzq/temp-Image67cs7-O.avif" alt="Whales Finder" /></a>
+										<div class="article-content">
 											<p>
-												Crafted with React, the T-Book Club site is a vibrant community hub for literature enthusiasts. 
-												It offers a Hall of Fame for top contributors, space for book discussions, an events calendar, 
-												and a gallery of discussed books to inspire your next read. Connect, 
-												share, and explore with fellow bibliophiles.</p><br>
-												<ul class="actions special"><li><a href="https://t-book-club.vercel.app" class="button">Start Reading</a></li></ul>
+												The "Whales Finder" project is a real-time transaction analysis tool on the Ethereum blockchain aimed at
+												identifying major players (whales) making transactions of certain amounts. 
+												With this tool, users can monitor the activity of large market participants and receive notifications about 
+												potentially significant transactions, helping them make informed decisions in their investment activities on the Ethereum
+												platform.
+											</p>
+										</div>
+										<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
 									</article>
-								<article>
-									<header><h2><a>Project 6</a></h2><h4><a>Network Bot</a></h4></header>
-									<a  class="image fit"><img src="images/NetworkBot.JPG" alt="Network Bot" /></a>
-									<p>This Bot can control the network and help user to find and troubleshoot problems.List of features:
-										<br> - find MAC\IP address of device in Network <br> - find Hostname of device in Network 
-										<br> - call the ports on Access Layer Switches <br> - get information from DHCP servers  
-										<br> - service commands Ping\Traceroute </p>
-									<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
-								</article>
+									
+									<article>
+										<header>
+											<h2><a>Project 4</a></h2>
+											<h4><a>Auto-trading Bot</a></h4>
+										</header>
+										<a class="image fit"><img src="https://i.postimg.cc/Y24s9zSQ/trader.png" alt="Auto-trading Bot" /></a>
+										<div class="article-content">
+											<p>
+												This bot receives signals in the form of webhooks from the TradingView platform and 
+												automatically opens positions to buy or sell various currency pairs. By using this tool, 
+												traders can automate their trading strategies and take advantage of market opportunities 
+												in real-time. The bot is designed to minimize latency in trade execution and provides users 
+												with a highly customizable setup, allowing for precise control over risk management and strategy 
+												parameters. 
+											</p>
+										</div>
+										<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
+									</article>
+									
+									<article>
+										<header>
+											<h2><a>Project 5</a></h2>
+											<h4><a>T-Book Club website</a></h4>
+										</header>
+										<a class="image fit"><img src="images/BK.JPG" alt="T-Book Club website" /></a>
+										<p>
+											Crafted with React, the T-Book Club site is a vibrant community hub for literature enthusiasts. 
+											It offers a Hall of Fame for top contributors, space for book discussions, an events calendar, 
+											and a gallery of discussed books to inspire your next read. Connect, 
+											share, and explore with fellow bibliophiles.
+										</p>
+										<ul class="actions special"><li><a href="https://t-book-club.vercel.app" class="button">Start Reading</a></li></ul>
+									</article>
+									<article>
+										<header>
+											<h2><a>Project 6</a></h2>
+											<h4><a>Network Bot</a></h4>
+										</header>
+										<a class="image fit"><img src="images/NetworkBot.JPG" alt="Network Bot" /></a>
+										<p>
+											This Bot can control the network and help user to find and troubleshoot problems. List of features:
+											- find MAC\IP address of device in Network 
+											- find Hostname of device in Network 
+											- call the ports on Access Layer Switches 
+											- get information from DHCP servers  
+											- service commands Ping\Traceroute 
+										</p>
+										<ul class="actions special"><li><a href="https://t.me/aleksey_a1" class="button">Ask me</a></li></ul>
+									</article>
+									
 								<article>
 									<header><h2><a>Project 7</a></h2><h4><a>Birthday Bot</a></h4></header>
 									<a  class="image fit"><img src="images/Birthday.JPG" alt="Birthday Bot" /></a>
@@ -177,30 +250,30 @@
 						</table>
 					</div>
 				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Thessaloniki, Greece</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+7(985) 092-0710</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">adk3551@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/aleksei-✅-aleinikov-✅-78195911a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/LF3551" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://t.me/aleksey_a1" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
-								</ul>
-							</section>
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Thessaloniki, Greece</p>
 						</section>
-					</footer>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">+7(985) 092-0710</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">adk3551@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/aleksei-aleinikov-78195911a/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/LF3551" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://t.me/aleksey_a1" class="icon brands alt fa-telegram"><span class="label">Telegram</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
 				<!-- Copyright -->
 					<div id="copyright">
 						<ul><li>&copy; Aleksei Aleinikov</li><li>Design: <a>Digital Transformation 2023</a></li>
